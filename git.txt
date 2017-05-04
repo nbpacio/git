@@ -1,0 +1,28 @@
+git init  <---- initialize git
+
+git clone https://github.com/user/gitrepo.git <----- get repository
+
+cd gitrepo
+
+change files/add new contents or files
+
+git add <new file/modified file>  <----- add file to commit
+
+git status -s
+
+git commit -m awscli.txt   <---------- commit file
+[master ac3a1cb] awscli.txt
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+git push origin master  <------------- push changes to repo
+
+Username for 'https://github.com': nbpacio@yahoo.com
+Password for 'https://nbpacio@yahoo.com@github.com':
+Counting objects: 5, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 294 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/nbpacio/AWS.git
+   1284c7f..ac3a1cb  master -> master
+[root@redhat-server AWS]#
