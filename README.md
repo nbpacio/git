@@ -59,6 +59,6 @@ git push -u origin main
 ## When to Use Each Approach
 
 - **Approach A**: Starting a brand new project locally
-- **Approach B**: You have an existing local repository that needs to be pushed to GitHub
+- **Approach B**: You have an existing local repository that needs to be pushed towards GitHub
 
 # END 
