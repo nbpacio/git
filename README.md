@@ -61,4 +61,26 @@ git push -u origin main
 - **Approach A**: Starting a brand new project locally
 - **Approach B**: You have an existing local repository that needs to be pushed towards GitHub
 
-# END OF FILE
+
+## To push changes from a local main branch to a remote master branch on GitHub
+Assuming you have made commits on your local main branch and wish to integrate them into the master branch on the remote repository, follow these steps: 
+ 
+# Switch to the master branch.
+
+    git checkout master
+
+# Pull the latest changes from the remote master branch: This ensures your local master is up-to-date before merging.
+
+    git pull origin master
+
+# Merge the main branch into master.
+
+
+    git merge main
+
+# This command integrates the changes from your local main branch into your local master branch. Resolve any merge conflicts that may arise during this step.
+Push the updated master branch to the remote repository:
+
+    git push origin master
+
+# This command sends your local master branch, now containing the changes from main, to the master branch on your GitHub repository.
