@@ -184,4 +184,8 @@ Push the updated master branch to the remote repository:
 
 ## This command sends your local master branch, now containing the changes from main, to the master branch on your GitHub repository.
 
--END OF FILE-
+<<<<<<< HEAD
+## END
+=======
+-By Brian-
+>>>>>>> my_branch
