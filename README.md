@@ -47,10 +47,12 @@ Start the SSH agent and add your key:
 
 ```bash
 # Start the SSH agent in the background
-eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)" - LINUX
+Start-Service ssh-agent - WINDOWS
 
 # Add your SSH private key to the ssh-agent
-ssh-add ~/.ssh/id_ed25519
+ssh-add ~/.ssh/id_ed25519 - LINUX
+ssh-add .ssh/id_ed25519 - WINDOWS
 
 # If you used RSA, use:
 # ssh-add ~/.ssh/id_rsa
@@ -68,7 +70,9 @@ cat ~/.ssh/id_ed25519.pub
 # pbcopy < ~/.ssh/id_ed25519.pub
 
 # On Windows (Git Bash), you can use:
-# clip < ~/.ssh/id_ed25519.pub
+clip < ~/.ssh/id_ed25519.pub - LINUX
+Get-Content .ssh/id_ed25519.pub | clip - WINDOWS
+
 ```
 
 2. Go to GitHub and add the key:
