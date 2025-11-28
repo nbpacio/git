@@ -2,6 +2,61 @@
 
 This guide covers two common scenarios for working with Git repositories.
 
+## Configuring Git with Global Settings
+
+Before you start using Git, you need to configure your identity. Git uses this information to associate your commits with your identity.
+
+### Set Your Username and Email Globally
+
+These commands configure Git globally (across all repositories on your system):
+
+```bash
+# Set your Git username
+git config --global user.name "Your Name"
+
+# Set your Git email (use the email associated with your GitHub account)
+git config --global user.email "your_email@example.com"
+```
+
+### Verify Your Configuration
+
+To check your current Git configuration:
+
+```bash
+# View all global Git settings
+git config --global --list
+
+# View specific settings
+git config --global user.name
+git config --global user.email
+```
+
+### What Does `--global` Mean?
+
+- `--global` applies the configuration to all repositories on your computer
+- Without `--global`, settings only apply to the current repository
+- Global settings are stored in `~/.gitconfig` (or `C:\Users\YourName\.gitconfig` on Windows)
+
+### Additional Useful Global Configurations
+
+```bash
+# Set default branch name to 'main'
+git config --global init.defaultBranch main
+
+# Set default editor (e.g., VS Code)
+git config --global core.editor "code --wait"
+
+# Enable colored output
+git config --global color.ui auto
+
+# Store credentials (for HTTPS)
+git config --global credential.helper store
+```
+
+**Important:** Always configure your username and email before making commits, as this information becomes part of your commit history and cannot be easily changed later.
+
+---
+
 ## Setting Up SSH Keys for GitHub
 
 Before you can push code to GitHub using SSH (the `git@github.com:` URLs shown in this guide), you need to set up SSH keys. SSH keys provide a secure way to authenticate with GitHub without entering your password each time.
@@ -184,4 +239,4 @@ Push the updated master branch to the remote repository:
 
 ## This command sends your local master branch, now containing the changes from main, to the master branch on your GitHub repository.
 
--Made By Brian-
+
