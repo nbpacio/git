@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Repository Purpose
 
 This is a Git learning and reference repository containing documentation and guides for:
+
 - Setting up Git configuration
 - Establishing SSH authentication with GitHub
 - Creating and pushing repositories to GitHub
@@ -26,12 +27,14 @@ The repository contains primarily educational documentation:
 ## Key Topics Covered
 
 ### Git Configuration
+
 - Global vs. local configuration settings
 - Setting username and email
 - Default branch naming conventions
 - Credential and editor configuration
 
 ### SSH Authentication
+
 - Why SSH keys are preferred over HTTPS
 - Ed25519 and RSA key generation
 - SSH agent configuration (platform-specific)
@@ -39,6 +42,7 @@ The repository contains primarily educational documentation:
 - Connection testing
 
 ### Repository Workflows
+
 - Initializing new local repositories
 - Pushing existing repositories
 - Branch operations and renaming
@@ -56,6 +60,7 @@ The repository contains primarily educational documentation:
 
 ### Adding/Updating Documentation
 When making changes to README.md or git.txt:
+
 - Ensure examples are accurate and tested
 - Include platform-specific variations when relevant
 - Maintain clear command explanations
@@ -63,6 +68,7 @@ When making changes to README.md or git.txt:
 
 ### Verifying Examples
 Test commands in appropriate environments before updating documentation, particularly for:
+
 - SSH key generation and setup
 - Cross-platform command variations
 - GitHub authentication workflows
